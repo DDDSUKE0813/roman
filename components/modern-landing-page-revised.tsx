@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Button } from "@/components/ui/button"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { Users, Cpu, PenTool, Lightbulb, Menu, X } from 'lucide-react'
+import { Users, Cpu, PenTool, Lightbulb, Menu, X, LucideIcon } from 'lucide-react'
 
 const FloatingShape = ({ delay = 0 }) => (
   <motion.div
@@ -41,7 +41,7 @@ const ConnectingLines = () => (
   </svg>
 )
 
-const ServiceCard = ({ icon: Icon, title, description }) => (
+const ServiceCard = ({ icon: Icon, title, description }: { icon: LucideIcon; title: string; description: string }) => (
   <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-4 md:p-6 flex flex-col items-center text-center">
     <div className="bg-gradient-to-br from-blue-400 to-purple-600 p-2 md:p-3 rounded-full mb-3 md:mb-4">
       <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
