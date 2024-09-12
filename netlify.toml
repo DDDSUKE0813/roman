@@ -1,12 +1,8 @@
-[
-build
-]
+[build]
   command = "npm run build"  # あなたのビルドコマンド
   publish = "build"  # ビルド出力ディレクトリ
 
-[[
-redirects
-]]
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
